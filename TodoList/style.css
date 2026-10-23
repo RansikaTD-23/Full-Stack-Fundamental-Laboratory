@@ -1,0 +1,42 @@
+body{
+    background-color: #f4f7fc;
+    min-height: 100vh;
+}
+
+.card{
+    border-radius: 16px;
+}
+
+#taskInput:focus{
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.2);
+    border-color: #0d6efd;
+}
+
+#taskList .list-group-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 8px;
+    transition: background-color 0.2s;
+}
+
+#taskList .list-group-item:hover{
+    background-color: #f1f5ff;
+}
+
+@media (max-width:576px) {
+    main.container{
+        margin-top: 1.5rem;
+    }
+    .card-body{
+        padding: 1.25rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }   
+}
+
+.completer {
+    text-decoration: line-through;
+    color: #6c757d;
+}

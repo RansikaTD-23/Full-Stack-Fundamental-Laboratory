@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!---Navbar-->
+    <nav class="navbar navbar-dark bg-primary px-4" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand mb-0 h1" href="index.html">My To-Do List</a>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+    
+    <!--Card-->
+    <div class="card shadow-sm border-0 rounded-4">
+        <div class="card-body p-4">
+
+        <!--Heading-->
+        <h1 class="text-center fw-bold">Task Manager</h1>
+        <p class="text-center text-secondary small">Organize your tasks and stay productive.</p>
+
+        <!--Task input-->
+        <div class="input-group mb-1">
+            <input type="text" id="taskInput" class="form-control" placeholder="Enter a new task...">
+            <button id="addBtn" class="btn btn-primary">Add Task</button>
+        </div>
+
+        <!--Error massage-->
+        <div id="errorMsg" class="text-danger small mb-2"></div>
+
+        <!--label-->
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="small text-secondary">Your tasks</span>
+            <span id="taskCounter" class="badge bg-primary">0 remaining</span>
+        </div>
+
+        <!--Filter-->
+        <div class="btn-group w-100 mb-3" role="group">
+            <button class="btn btn-primary active" data-filter="all">All</button>
+            <button class="btn btn-outline-primary" data-filter="active">Active</button>
+            <button class="btn btn-outline-primary" data-filter="completed">Completed</button>
+        </div>
+
+        <!--Task list-->
+        <ul id="taskList" class="list-group list-group-flush mb-2"></ul>
+        <p id="emptyMsg" class="text-center text-secondary small my-4">No tasks yet.Add your first task!</p>
+
+        <!--Clear completed-->
+        <div class="text-end">
+            <button id="clearBtn" class="btn btn-outline-danger btn-sm">Clear Completed</button>
+        </div>
+        
+
+
+          </div>
+    </div>
+
+         </div>
+        </div>
+    </main>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
